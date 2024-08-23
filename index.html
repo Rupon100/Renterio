@@ -36,7 +36,7 @@
 <body>
     <!-- header section -->
     <header class="bg-gradient-to-b from-slate-50 to-white">
-      <div class="container mx-auto px-4 py-4 lg:py-6 ">
+      <div class="max-w-[90%] mx-auto px-4 py-4 lg:py-6 ">
         <!-- navbar  -->
         <div class="navbar bg-base-100 overflow-hidden bg-transparent">
           <div class="navbar-start md:w-auto">
@@ -113,7 +113,7 @@
           <div class="w-auto lg:w-5/6 flex gap-4 md:gap-5 flex-col items-center text-center">
               <h1 class="text-txtfont text-4xl font-semibold md:text-6xl">A barn house of this design has a striking appearance</h1>
               <p class="text-txtfont text-base w-">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-              <button class="btn px-14 sm:px-4  sm:self-center border-none hover:bg-lime-400 flex flex-row bg-lime-200">
+              <button class="btn rounded-full px-14 sm:px-4  sm:self-center border border-lime-300 hover:bg-lime-400 flex flex-row bg-lime-200">
                   View Details
                   <div class="rounded-full p-2  bg-lime-300">
                     <svg class="w-5 h-5  rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -128,7 +128,7 @@
     <!-- main section -->
     <main class="bg-slate-100">
       <!-- aboutUs section -->
-      <section class="container mx-auto px-8 py-14 lg:py-24 grid justify-center items-center gap-10 grid-cols-1 md:grid-cols-2">
+      <section class="max-w-[90%] mx-auto px-8 py-14 lg:py-24 flex flex-col md:flex-row md:justify-between items-center gap-10 grid-cols-1 md:grid-cols-2">
         <div class="relative">
           <div class="hidden lg:block absolute -top-14 -left-14">
             <img src="./assets/Vector.png" alt="arrow vector">
@@ -161,11 +161,11 @@
           </div>
         </div>
         <div class="rounded-xl">
-          <img class="rounded-2xl max-h-[380px] lg:max-h-full w-full object-cover" src="./assets/Rectangle.png" alt="aboutus-image">
+          <img class="rounded-2xl h-full w-full object-cover" src="./assets/Rectangle.png" alt="aboutus-image">
         </div>
       </section>
       <!-- how we works -->
-      <section class="container mx-auto px-8 py-10 lg:py-12 flex justify-center items-center gap-10 flex-col">
+      <section class="max-w-[90%] mx-auto px-8 py-10 lg:py-12 flex justify-center items-center gap-10 flex-col">
         <div class="flex gap-3 flex-col justify-center items-center">
           <div class="flex flex-row place-content-start w-fit space-x-2 px-5 py-2 bg-white rounded-full font-semibold">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -203,7 +203,7 @@
       </section>
       <!-- portfolio -->
       <section class="bg-white">
-        <div class="container mx-auto px-8 py-10 lg:py-12 flex flex-col justify-center items-center gap-8">
+        <div class="max-w-[90%] mx-auto px-8 py-10 lg:py-12 flex flex-col justify-center items-center gap-8">
           <div class="flex gap-3 flex-col justify-center items-center">
             <div class="flex flex-row place-content-start w-fit space-x-2 px-5 py-2 bg-lime-200 rounded-full font-semibold uppercase">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -216,34 +216,38 @@
               The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
             </p>
           </div>
-          <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-            <div class="col-span-1 lg:col-span-3 border rounded-2xl p-4 order-1">
+          <div class="grid gap-4 grid-cols-1 lg:grid-cols-12">
+            <div class="col-span-1 lg:col-span-8 border rounded-2xl p-4 order-1 flex justify-stretch items-stretch">
               <div class="flex flex-col lg:flex-row gap-6 justify-center items-center">
-              <img class="rounded-2xl w-full h-full lg:bg-auto max-h-[200px] lg:max-h-none" src="./assets/img1.png" alt="portfolio">
-              <div class="flex flex-col gap-3">
-                <h4 class="text-2xl font-bold">Commercial</h4>
-                <p>The barn house captivates with its blend of rustic charm and modern.The barn house captivates with its blend of rustic charm and modern.</p>
-                <div class="flex flex-row space-x-1  items-center">
-                  <h2 class="text-xl text-black font-semibold">View Details</h2>
-                  <div class="bg-lime-300 mt-1 p-1 rounded-full">
-                    <svg class="w-4 h-4  rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 4.5-15 15m0 0h11.25m-11.25 0V8.25" />
-                    </svg>
-                  </div> 
+                <div class="basis-12/12 lg:basis-4/12 h-[100%] w-[100%]">
+                  <img class="rounded-2xl h-[250px] md:h-full w-full" src="./assets/img1.png" alt="portfolio">
+                </div>
+                <div class="basis-8/12 flex flex-col gap-3">
+                  <h4 class="text-2xl font-bold">Commercial</h4>
+                  <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                  <div class="flex flex-row space-x-1  items-center">
+                    <h2 class="text-xl text-black font-semibold">View Details</h2>
+                    <div class="bg-lime-300 mt-1 p-1 rounded-full">
+                      <svg class="w-4 h-4 rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 4.5-15 15m0 0h11.25m-11.25 0V8.25" />
+                      </svg>
+                    </div> 
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="col-span-1 lg:col-span-4 border rounded-2xl p-4 order-2 h-[100%] w-[100%]">
+              <img class="rounded-2xl h-[250px] md:h-full w-full" src="./assets/img2.png" alt="portfolio">
             </div>
-            <div class="col-span-1 border rounded-2xl p-4 order-2">
-              <img class="rounded-2xl w-full h-full lg:bg-auto max-h-[200px] lg:max-h-none" src="./assets/img2.png" alt="portfolio">
+            <div class="col-span-1 lg:col-span-3 border rounded-2xl p-4 order-5 lg:order-3 flex justify-stretch items-stretch h-[100%] w-[100%]">
+              <img class="rounded-2xl h-[250px] md:h-full w-full" src="./assets/img3.png" alt="portfolio">
             </div>
-            <div class="col-span-1 border rounded-2xl p-4 order-5 lg:order-3">
-              <img class="w-full h-full lg:bg-auto max-h-[200px] lg:max-h-none" src="./assets/img3.png" alt="portfolio">
-            </div>
-            <div class="col-span-1 lg:col-span-2 border rounded-2xl p-4 order-4">
+            <div class="col-span-1 lg:col-span-6 border rounded-2xl p-4 order-4 flex justify-stretch items-stretch">
               <div class="flex flex-col lg:flex-row gap-6 justify-center items-center">
-                <img class="rounded-2xl w-full h-[200px] lg:bg-auto max-h-[200px] lg:max-h-none" src="./assets/img4.png" alt="portfolio">
-                <div class="flex flex-col gap-3">
+                <div class="basis-4/12 h-[100%] w-[100%]">
+                  <img class="rounded-2xl h-[250px] md:h-full w-full" src="./assets/img4.png" alt="portfolio">
+                </div>
+                <div class="basis-8/12 flex flex-col gap-3">
                   <h4 class="text-2xl font-bold">Commercial</h4>
                   <p>The barn house captivates with its blend of rustic charm and modern.<span class="lg:hidden">The barn house captivates with its blend of rustic charm and modern.</span> </p>
                   <div class="flex flex-row space-x-1  items-center">
@@ -257,8 +261,8 @@
                 </div>
             </div> 
             </div>
-            <div class="col-span-1 border rounded-2xl p-4 order-3 lg:order-5">
-              <img class="rounded-2xl w-full h-full lg:bg-auto max-h-[200px] lg:max-h-none" src="./assets/img5.png" alt="portfolio">
+            <div class="col-span-1 lg:col-span-3 border rounded-2xl p-4 order-3 lg:order-5 h-[100%] w-[100%]">
+              <img class="rounded-2xl h-[250px] md:h-full w-full" src="./assets/img5.png" alt="portfolio">
             </div>
           </div>
         </div>
