@@ -376,22 +376,26 @@
                 Fill out the contact form for personalized assistance and prompt responses from our team.
               </p>
           </div>
-          <form class=" my-10 flex flex-col justify-center items-center">
-            <div class="space-y-6">
-              <div class="grid gap-8 grid-cols-1 sm:grid-cols-2">
-                <div class="col-span-1 w-full">
-                  <input class="p-4 sm:pr-12 rounded-full outline-none" type="text" name="fname" placeholder="First Name*" required>
+          <form class="max-w-[90%] mx-auto my-10 flex flex-col justify-center items-center">
+            <div class="w-full space-y-6">
+              <div class="w-full flex gap-5 flex-col justify-center items-center">
+                <div class="w-full flex gap-5 flex-col sm:flex-row justify-between">
+                  <div class="w-full">
+                    <input class="w-full p-4 sm:pr-12 rounded-full outline-none" type="text" name="fname" placeholder="First Name*" required>
+                  </div>
+                  <div class="w-full">
+                    <input class="w-full p-4 sm:pr-12 rounded-full outline-none" type="text" name="lname" placeholder="Last Name*" required>
+                  </div>
                 </div>
-                <div class="col-span-1 w-full">
-                  <input class="p-4 sm:pr-12 rounded-full outline-none" type="text" name="lname" placeholder="Last Name*" required>
+                <div class="w-full flex gap-5 flex-col sm:flex-row justify-between">
+                  <div class=" w-full">
+                    <input class="w-full p-4 sm:pr-12 rounded-full outline-none" type="text" name="number" placeholder="Phone Number*" required>
+                  </div>
+                  <div class=" w-full">
+                    <input class="w-full p-4 sm:pr-12 rounded-full outline-none" type="email" name="email" placeholder="Email*" required>
+                  </div>
                 </div>
-                <div class="col-span-1 w-full">
-                  <input class="p-4 sm:pr-12 rounded-full outline-none" type="text" name="number" placeholder="Phone Number*" required>
-                </div>
-                <div class="col-span-1 w-full">
-                  <input class="p-4 sm:pr-12 rounded-full outline-none" type="email" name="email" placeholder="Email*" required>
-                </div>
-                <div class="col-span-1 sm:col-span-2 w-full">
+                <div class="w-full">
                   <textarea class="p-4 pb-32 w-full resize-none rounded-2xl outline-none" name="message" placeholder="White Your message here"></textarea>
                 </div>
               </div>
